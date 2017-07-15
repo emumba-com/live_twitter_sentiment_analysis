@@ -3,7 +3,7 @@ This project implements a scalable architecture to monitor and visualize sentime
 
 ### System design
 Diagram below illustrates different components and information flow (from left to right).
-![system design](https://user-images.githubusercontent.com/1760859/28226668-6bc5ce04-68f0-11e7-864f-529340a08d59.png)
+![system design](https://user-images.githubusercontent.com/1760859/28240920-5a8ed604-69a3-11e7-95e1-38a6ddb43f7c.png)
 
 ### Project breakdown
 Project has three parts
