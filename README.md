@@ -16,7 +16,7 @@ Web server runs each independent task in an independent thread.<br>
 **Thread 2**: performs sentiment analysis on each tweet<br>
 **Thread 3**: looks for rolling mean from spark streaming<br>
 
-All these independent threads can run as independent services to provide a scalable and fault tolerant system. 
+All these threads can run as an independent service to provide a scalable and fault tolerant system. 
 
 #### 2. Kafka
 Kafka acts as a message broker between different modules running within the web server as well as between web server and spark streaming server. It provides a scalable and fault tolerant mechanism of communication between independently running services.  
