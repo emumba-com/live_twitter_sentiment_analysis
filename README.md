@@ -11,7 +11,7 @@ Project has three parts
 #### 1. Web server
 WebServer is a python [flask](http://flask.pocoo.org/) server. It fetches data from twitter using [Tweepy](http://www.tweepy.org/). Tweets are pushed into [Kafka](https://kafka.apache.org/). A sentiment analyzer picks tweets from kafka, performs sentiment analysis using [NLTK](http://www.nltk.org/_modules/nltk/sentiment/vader.html) and pushes the result back in Kafka. Sentiment is read by [Spark Streaming](https://spark.apache.org/streaming/) server (part 3), it calculates the rolling average and writes data back in Kafka. In the final step, the web server reads the rolling mean from Kafka and sends it to connected clients via [SocketIo](https://socket.io/). A html/JS client displays the live sentiment in a sparkline graph using [google annotation](https://developers.google.com/chart/interactive/docs/gallery/annotationchart) charts. 
 
-Web server runs each independent task in an independent thread.<br>
+Web server runs each independent task in a separate thread.<br>
 **Thread 1**: fetches data from twitter<br>
 **Thread 2**: performs sentiment analysis on each tweet<br>
 **Thread 3**: looks for rolling mean from spark streaming<br>
