@@ -29,7 +29,7 @@ KAFKA_TOPIC_FOR_SENTIMENT = 'sentiment'
 KAFKA_TOPIC_FOR_TWEETS = 'tweet'
 KAFKA_CONNECTION_STRING = 'localhost:9092'
 TWEET_ENCODING = 'utf-8'
-TWITTER_HASHTAG = 'Pakistan'
+TWITTER_HASHTAG = 'happy'
 
 sio = socketio.Server()
 app = Flask(__name__)
@@ -80,7 +80,7 @@ if __name__ == '__main__':
     # launch thread to capture rolling average of sentiment
     threads.launch(
         (
-            KAFKA_TOPIC_FOR_SENTIMENT,
+            KAFKA_TOPIC_FOR_AVERAGE,
             average_callback,
             KAFKA_CONNECTION_STRING,
             TWEET_ENCODING
