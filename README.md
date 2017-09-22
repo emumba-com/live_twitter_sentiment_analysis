@@ -47,6 +47,6 @@ python live_twitter_sentiment_analysis/webapp/main.py
 ### Output
 Here is what final output looks like in browser
 
-![output](https://user-images.githubusercontent.com/1760859/28225813-51a955fc-68ed-11e7-8fc7-40f5a5022ac5.png)
+![output](https://user-images.githubusercontent.com/1760859/30729488-69da0d02-9f79-11e7-9fea-2e6c411f8565.png)
 
 Note: Tested on python 2.7
