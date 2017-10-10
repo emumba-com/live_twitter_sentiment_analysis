@@ -2,7 +2,7 @@
 This project implements a scalable architecture to monitor and visualize sentiment against a twitter hashtag in real-time. It streams live tweets from Twitter against a hashtag, performs sentiment analysis on each tweet, and calculates the rolling mean of sentiments. This sentiment mean is continuously sent to connected browser clients and displayed in a sparkline graph. 
 
 ### System design
-Diagram below illustrates different components and information flow (from left to right).
+Diagram below illustrates different components and information flow (from right to left).
 ![system design](https://user-images.githubusercontent.com/1760859/28240920-5a8ed604-69a3-11e7-95e1-38a6ddb43f7c.png)
 
 ### Project breakdown
